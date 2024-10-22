@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrera QR - MY QR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="logo" onclick="goToHome()">MY QR</h1>
+        </div>
+    </header>
+    <main>
+        <section id="register-qr-section">
+            <h2>Registrera en QR-kod</h2>
+            <button class="btn" onclick="navigate('register-item.html')">Ett föremål</button>
+            <button class="btn" onclick="navigate('register-animal.html')">Ett djur</button>
+            <button class="btn" onclick="navigate('register-person.html')">En människa</button>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MY QR</p>
+        </div>
+    </footer>
+    <script>
+        function goToHome() {
+            window.location.href = 'index.html';
+        }
+ 
+        function navigate(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
+ 
